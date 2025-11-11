@@ -1,15 +1,11 @@
 import { Phone, MapPin, Globe, Mail } from "lucide-react";
 import { Button } from "./ui/button";
 import ContactForm from "./ContactForm";
-
 const Contact = () => {
-  return (
-    <section id="contact" className="py-20 bg-secondary">
+  return <section id="contact" className="py-20 bg-secondary">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-            Skontaktuj się z nami
-          </h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">Skontaktuj się z nami</h2>
           <div className="h-1 w-24 bg-primary mx-auto mb-8"></div>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Jesteśmy do Twojej dyspozycji. Zadzwoń lub odwiedź nas w naszym serwisie.
@@ -27,10 +23,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold mb-2 text-card-foreground">Telefon</h3>
-                  <a
-                    href="tel:+48530444799"
-                    className="text-lg text-primary hover:underline"
-                  >
+                  <a href="tel:+48530444799" className="text-lg text-primary hover:underline">
                     +48 530 444 799
                   </a>
                 </div>
@@ -58,12 +51,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold mb-2 text-card-foreground">Strona WWW</h3>
-                  <a
-                    href="https://www.expert-komp.pl"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-lg text-primary hover:underline"
-                  >
+                  <a href="https://www.expert-komp.pl" target="_blank" rel="noopener noreferrer" className="text-lg text-primary hover:underline">
                     www.expert-komp.pl
                   </a>
                 </div>
@@ -77,10 +65,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold mb-2 text-card-foreground">Email</h3>
-                  <a
-                    href="mailto:kontakt@expert-komp.pl"
-                    className="text-lg text-primary hover:underline"
-                  >
+                  <a href="mailto:kontakt@expert-komp.pl" className="text-lg text-primary hover:underline">
                     kontakt@expert-komp.pl
                   </a>
                 </div>
@@ -99,19 +84,13 @@ const Contact = () => {
             <p className="text-muted-foreground mb-6">
               Skontaktuj się z nami telefonicznie – jesteśmy gotowi pomóc!
             </p>
-            <Button
-              size="lg"
-              className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-8 py-6"
-              onClick={() => window.location.href = "tel:+48530444799"}
-            >
+            <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-8 py-6" onClick={() => window.location.href = "tel:+48530444799"}>
               <Phone className="mr-2 h-5 w-5" />
               Zadzwoń: +48 530 444 799
             </Button>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Contact;
