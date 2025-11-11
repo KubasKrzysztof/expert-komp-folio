@@ -1,5 +1,6 @@
 import { Phone, MapPin, Globe, Mail } from "lucide-react";
 import { Button } from "./ui/button";
+import ContactForm from "./ContactForm";
 
 const Contact = () => {
   return (
@@ -16,8 +17,10 @@ const Contact = () => {
         </div>
 
         <div className="max-w-4xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-            <div className="bg-card p-8 rounded-lg border border-border hover:border-primary transition-colors">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+          {/* Dane kontaktowe */}
+          <div className="space-y-6">
+            <div className="bg-card p-6 rounded-lg border border-border hover:border-primary transition-colors">
               <div className="flex items-start gap-4">
                 <div className="bg-primary/10 w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0">
                   <Phone className="h-6 w-6 text-primary" />
@@ -34,7 +37,7 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="bg-card p-8 rounded-lg border border-border hover:border-primary transition-colors">
+            <div className="bg-card p-6 rounded-lg border border-border hover:border-primary transition-colors">
               <div className="flex items-start gap-4">
                 <div className="bg-primary/10 w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0">
                   <MapPin className="h-6 w-6 text-primary" />
@@ -48,7 +51,7 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="bg-card p-8 rounded-lg border border-border hover:border-primary transition-colors">
+            <div className="bg-card p-6 rounded-lg border border-border hover:border-primary transition-colors">
               <div className="flex items-start gap-4">
                 <div className="bg-primary/10 w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0">
                   <Globe className="h-6 w-6 text-primary" />
@@ -67,7 +70,7 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="bg-card p-8 rounded-lg border border-border hover:border-primary transition-colors">
+            <div className="bg-card p-6 rounded-lg border border-border hover:border-primary transition-colors">
               <div className="flex items-start gap-4">
                 <div className="bg-primary/10 w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0">
                   <Mail className="h-6 w-6 text-primary" />
@@ -84,6 +87,10 @@ const Contact = () => {
               </div>
             </div>
           </div>
+
+          {/* Formularz kontaktowy */}
+          <ContactForm />
+        </div>
 
           <div className="text-center bg-card p-8 rounded-lg border border-primary">
             <h3 className="text-2xl font-bold mb-4 text-card-foreground">
