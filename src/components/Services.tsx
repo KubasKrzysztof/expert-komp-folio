@@ -1,4 +1,4 @@
-import { Wrench, HardDrive, Cpu, ShoppingCart, Headphones } from "lucide-react";
+import { Wrench, HardDrive, Cpu, ShoppingCart, Headphones, Globe } from "lucide-react";
 
 const Services = () => {
   const services = [
@@ -21,6 +21,11 @@ const Services = () => {
       icon: ShoppingCart,
       title: "Sprzedaż sprzętu i akcesoriów",
       description: "Szeroki wybór podzespołów, notebooków, multimediów i akcesoriów.",
+    },
+    {
+      icon: Globe,
+      title: "Tworzenie stron WWW portfolio",
+      description: "Projektujemy i tworzymy profesjonalne strony internetowe dla firm i osób prywatnych.",
     },
     {
       icon: Headphones,
