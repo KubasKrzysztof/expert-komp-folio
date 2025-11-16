@@ -25,7 +25,7 @@ const Services = () => {
     {
       icon: Globe,
       title: "Tworzenie stron WWW portfolio",
-      description: "Projektujemy i tworzymy profesjonalne strony internetowe dla firm i osób prywatnych.",
+      description: "Projektujemy nowoczesne i estetyczne strony internetowe typu portfolio, które profesjonalnie prezentują ofertę Twojej firmy.",
     },
     {
       icon: Headphones,
