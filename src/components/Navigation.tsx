@@ -41,7 +41,9 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-20">
           <button
             onClick={() => scrollToSection("hero")}
-            className="text-2xl font-bold text-foreground hover:text-primary transition-colors"
+            className={`text-2xl font-bold transition-colors ${
+              isScrolled ? "text-foreground" : "text-white dark:text-foreground"
+            } hover:text-primary`}
           >
             expert-komp
           </button>
@@ -52,7 +54,9 @@ const Navigation = () => {
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className="text-foreground hover:text-primary transition-colors font-medium"
+                className={`transition-colors font-medium ${
+                  isScrolled ? "text-foreground" : "text-white dark:text-foreground"
+                } hover:text-primary`}
               >
                 {item.label}
               </button>
