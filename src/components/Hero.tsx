@@ -1,8 +1,12 @@
 import { Button } from "./ui/button";
 import { Phone, ArrowDown } from "lucide-react";
+import { useTheme } from "next-themes";
 import heroBg from "@/assets/hero-bg.jpg";
+import heroLightBg from "@/assets/hero-light.jpg";
 
 const Hero = () => {
+  const { theme } = useTheme();
+  
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
@@ -10,12 +14,16 @@ const Hero = () => {
     }
   };
 
+  const backgroundImage = theme === "light" ? heroLightBg : heroBg;
+
   return (
     <section
       id="hero"
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
       style={{
-        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url(${heroBg})`,
+        backgroundImage: theme === "light" 
+          ? `url(${backgroundImage})` 
+          : `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url(${backgroundImage})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundAttachment: "fixed",
