@@ -32,7 +32,7 @@ const Hero = () => {
       <div className="container mx-auto px-4 py-20 text-center relative z-10">
         <div className="max-w-4xl mx-auto">
           <div className="mb-8 animate-fade-in">
-            <h1 className="text-5xl md:text-7xl font-bold mb-4 text-foreground">
+            <h1 className="text-5xl md:text-7xl font-bold mb-4 text-black dark:text-foreground">
               expert-komp
             </h1>
             <div className="flex items-center justify-center gap-2 mb-6">
@@ -44,7 +44,7 @@ const Hero = () => {
             </div>
           </div>
 
-          <p className="text-xl md:text-2xl text-foreground mb-12 animate-fade-in">
+          <p className="text-xl md:text-2xl text-black dark:text-foreground mb-12 animate-fade-in">
             Serwis i sprzedaż sprzętu komputerowego – szybko, profesjonalnie, z pasją
           </p>
 
