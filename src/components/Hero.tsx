@@ -44,7 +44,7 @@ const Hero = () => {
             </div>
           </div>
 
-          <p className="text-xl md:text-2xl text-foreground/90 mb-12 animate-fade-in">
+          <p className="text-xl md:text-2xl text-foreground mb-12 animate-fade-in">
             Serwis i sprzedaż sprzętu komputerowego – szybko, profesjonalnie, z pasją
           </p>
 
