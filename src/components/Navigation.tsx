@@ -34,7 +34,9 @@ const Navigation = () => {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-background/95 backdrop-blur-sm shadow-lg" : "bg-transparent"
+        isScrolled 
+          ? "bg-background/95 backdrop-blur-sm shadow-lg" 
+          : "bg-transparent dark:bg-transparent light:bg-background/95 light:backdrop-blur-sm light:shadow-lg"
       }`}
     >
       <div className="container mx-auto px-4">
@@ -52,9 +54,7 @@ const Navigation = () => {
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className={`transition-colors font-medium ${
-                  isScrolled ? "text-black dark:text-foreground" : "text-white dark:text-foreground"
-                } hover:text-primary`}
+                className="text-black dark:text-white hover:text-primary transition-colors font-medium"
               >
                 {item.label}
               </button>
