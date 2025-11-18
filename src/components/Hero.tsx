@@ -22,7 +22,7 @@ const Hero = () => {
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
       style={{
         backgroundImage: theme === "light" 
-          ? `url(${backgroundImage})` 
+          ? `linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url(${backgroundImage})` 
           : `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url(${backgroundImage})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
@@ -30,7 +30,7 @@ const Hero = () => {
       }}
     >
       <div className="container mx-auto px-4 py-20 text-center relative z-10">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-4xl mx-auto bg-white/80 dark:bg-transparent backdrop-blur-sm rounded-lg p-8 dark:p-0">
           <div className="mb-8 animate-fade-in">
             <h1 className="text-5xl md:text-7xl font-bold mb-4 text-black dark:text-foreground">
               expert-komp
