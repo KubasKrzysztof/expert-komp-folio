@@ -52,7 +52,7 @@ const Services = () => {
 						return (
 							<div
 								key={index}
-								className='bg-card p-8 rounded-lg hover:transform hover:scale-105 transition-all duration-300 border border-border group hover:border-primary'>
+								className='bg-card p-8 rounded-lg hover:transform hover:scale-105 transition-all duration-300 border border-border group hover:border-primary text-center'>
 								<div className='bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4'>
 									<Icon className='h-8 w-8 text-primary' />
 								</div>
