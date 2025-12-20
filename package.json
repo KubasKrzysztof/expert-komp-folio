@@ -1,6 +1,5 @@
-
 {
-  "homepage": "https://KubasKrzysztof.github.io/expert-komp-folio/",
+	"homepage": "https://KubasKrzysztof.github.io/expert-komp-folio/",
 	"name": "vite_react_shadcn_ts",
 	"private": true,
 	"version": "0.0.0",
@@ -8,11 +7,13 @@
 	"scripts": {
 		"dev": "vite",
 		"build": "vite build",
-		"build:dev": "vite build --mode development",
-		"lint": "eslint .",
+		"build:github": "vite build --mode github",
+		"build:seo": "vite build --mode production",
+		"deploy:github": "npm run build:github && gh-pages -d dist",
+		"deploy:seo": "npm run build:seo",
+		"publish:all": "npm run deploy:github && npm run deploy:seo",
 		"preview": "vite preview",
-		"predeploy": "npm run build",
-		"deploy": "gh-pages -d dist"
+		"lint": "eslint ."
 	},
 	"dependencies": {
 		"@hookform/resolvers": "^3.10.0",
