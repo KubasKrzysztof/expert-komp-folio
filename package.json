@@ -10,7 +10,7 @@
 		"build:github": "vite build --mode github",
 		"build:seo": "vite build --mode production",
 		"deploy:github": "npm run build:github && gh-pages -d dist",
-		"deploy:seo": "npm run build:seo",
+		"deploy:seo": "npm run build:seo && bash scripts/deploy-ftp.sh dist-seo",
 		"publish:all": "npm run deploy:github && npm run deploy:seo",
 		"preview": "vite preview",
 		"lint": "eslint ."
