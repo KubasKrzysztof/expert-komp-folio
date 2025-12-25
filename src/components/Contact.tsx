@@ -38,7 +38,7 @@ const Contact = () => {
 									</div>
 									<div>
 										<h3 className='text-xl font-bold mb-2 text-card-foreground'>Adres</h3>
-										<p className='text-lg text-muted-foreground'>Dziewin, ul. Szeroka</p>
+										<p className='text-lg text-muted-foreground'>Dziewin, ul. Szeroka 228</p>
 									</div>
 								</div>
 							</div>

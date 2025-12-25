@@ -9,8 +9,8 @@ const Services = () => {
 		},
 		{
 			icon: HardDrive,
-			title: 'Odzyskiwanie danych',
-			description: 'Ratujemy utracone dane z uszkodzonych dysków i nośników pamięci.',
+			title: 'Doradztwo informatyczne',
+			description: 'Pomoc w doborze i zakupie sprzętu komputerowego, projektowanie rozwiązań informatycznych, doradztwo w obszarze bezpieczeństw',
 		},
 		{
 			icon: Cpu,
